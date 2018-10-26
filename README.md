@@ -11,7 +11,7 @@
   ## Setup/Installation Requirements
 
   * _Clone repository, open index.html in web browser_
-  * _View from (placeholder for gh-pages)_
+  * _View from_ https://milesbradt.github.io/beep-boop-oct/
 
   ## Known Bugs
 
