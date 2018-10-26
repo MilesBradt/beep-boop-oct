@@ -27,7 +27,11 @@
 
   ## Sources
 
-  _Hal image from:_ http://kubrick.wikia.com/wiki/File:Hal.png
+  * _Hal image from:_ http://kubrick.wikia.com/wiki/File:Hal.png
+
+  * _Fade Effect:_ https://stackoverflow.com/questions/3079330/css3-fade-effect
+
+  * _Gradient Effect:_ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
 
   ### Specs followed
 

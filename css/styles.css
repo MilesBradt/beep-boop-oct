@@ -4,11 +4,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+/* Gradient from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
 .header {
   text-align: center;
   color: #E1E3E0;
   padding-bottom: 35px;
-  background-image:
+  background:
   linear-gradient(
     to top,
     #380D00, #661300
@@ -19,6 +21,7 @@ body {
     border-radius: 0%;
 }
 
+/* Fade effect comes from https://stackoverflow.com/questions/3079330/css3-fade-effect */
 .fadeInColor:hover {
   color: #E1E3E0;
   background-color: #9C0007;
