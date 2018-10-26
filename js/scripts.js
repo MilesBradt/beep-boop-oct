@@ -16,7 +16,6 @@ function countsTo(stopAt) {
 
 function replaces0WithBeep(number) {
   var splitNumbers = number.toString().split(",");
-  console.log(splitNumbers);
   for (var i = 0; i < splitNumbers.length; i++) {
     if (splitNumbers[i] === "0") {
       splitNumbers[i] = "Beep";
@@ -35,6 +34,6 @@ $(document).ready(function() {
     event.preventDefault();
     countsTo($("input#userNumber").val());
     replaces0WithBeep(startingArray);
-    console.log(splitNumbersArray);
+    $("#output").text(splitNumbersArray.join(', '));
   });
 });
