@@ -15,8 +15,8 @@ function replaces0WithBeep(number) {
   var splitNumbers = number.toString().split(",");
   console.log(splitNumbers);
   for (var i = 0; i <= splitNumbers.length; i++) {
-    if (splitNumbers[i] == "0") {
-      console.log("Beep!");
+    if (splitNumbers[i] === "0") {
+      splitNumbers[i] = "Beep!"
     }
   }
   return splitNumbers;
