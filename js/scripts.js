@@ -39,6 +39,8 @@ $(document).ready(function() {
     countsTo($("input#userNumber").val());
     replaces0WithBeep(startingArray);
     $("#okay").hide();
+    $("input#userNumber").hide();
+    $("label").hide();
     $("#again").show();
     $("#output").show();
     $(".beepboop").text(splitNumbersArray.join(', '));
@@ -48,8 +50,10 @@ $(document).ready(function() {
   $("#again").click(function(event) {
     event.preventDefault();
     $("#output").hide();
-    $("#okay").show();
     $("#again").hide();
+    $("label").show();
+    $("#okay").show();
+    $("input#userNumber").show();
     startingArray = [];
     splitNumbersArray = [];
   });
