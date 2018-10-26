@@ -1,4 +1,5 @@
-beepBoopArray = [];
+var beepBoopArray = [];
+var splitNumbersArray = [];
 
 function countsTo(stopAt) {
   if (stopAt < 0) {
@@ -14,12 +15,13 @@ function countsTo(stopAt) {
 function replaces0WithBeep(number) {
   var splitNumbers = number.toString().split(",");
   console.log(splitNumbers);
+
   for (var i = 0; i <= splitNumbers.length; i++) {
     if (splitNumbers[i] === "0") {
-      splitNumbers[i] = "Beep!"
+      splitNumbers[i] = "Beep";
     }
   }
-  return splitNumbers;
+  return splitNumbersArray = splitNumbers.slice();
 }
 
 
@@ -27,5 +29,6 @@ function replaces0WithBeep(number) {
 $(document).ready(function() {
 
 console.log(countsTo(15));
-console.log(beepBoopArray);
+console.log(splitNumbersArray);
+
 });
