@@ -22,7 +22,7 @@ function replaces0WithBeep(number) {
     } else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
       splitNumbers[i] = "Boop!"
     } else if (parseInt(splitNumbers[i]) % 3 === 0) {
-      splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
+      splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that";
     }
   }
   return splitNumbersArray = splitNumbers.slice();
@@ -30,10 +30,20 @@ function replaces0WithBeep(number) {
 
 
 $(document).ready(function() {
-  $("#userInput").submit(function(event) {
+  $("#okay").click(function(event) {
     event.preventDefault();
     countsTo($("input#userNumber").val());
     replaces0WithBeep(startingArray);
+    // $("#okay").hide();
+    // $("#again").show();
+    $("#output").show();
     $("#output").text(splitNumbersArray.join(', '));
   });
+  // $("#again").click(function(event) {
+  //   event.preventDefault();
+  //   countsTo($("input#userNumber").val());
+  //   replaces0WithBeep(startingArray);
+  //   $("#output").show();
+  //   $("#output").text(splitNumbersArray.join(', '));
+  // });
 });

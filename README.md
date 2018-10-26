@@ -9,6 +9,8 @@ Specs:
 
   (These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that.")
 
+  -User should be able to enter a new number and see new results over and over again.
+
   -Add HTML and jQuery to take user input
 
   -CSS style
