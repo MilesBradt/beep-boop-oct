@@ -1,9 +1,7 @@
-.fadeInColor:hover {
+body {
+  background-color: #380D00;
   color: #E1E3E0;
-  background-color: #B20008;
-  -webkit-transition: background-color 4000ms linear;
-  -ms-transition: background-color 4000ms linear;
-  transition: background-color 4000ms linear;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -21,22 +19,28 @@
     border-radius: 0%;
 }
 
-h1 {
-  font-size: 72px;
+.fadeInColor:hover {
+  color: #E1E3E0;
+  background-color: #9C0007;
+  -webkit-transition: background-color 4000ms linear;
+  -ms-transition: background-color 4000ms linear;
+  transition: background-color 4000ms linear;
+}
+
+label {
+  margin-right: 5px;
 }
 
 button, input {
   color: #1C0500;
 }
 
-body {
-  background-color: #380D00;
-  color: #E1E3E0;
+h1 {
+  font-size: 72px;
 }
 
-.top {
-  display: flex;
-  margin: 0 auto;
+.container {
+  margin-top: 50px;
 }
 
 #userNumber {
@@ -47,6 +51,10 @@ body {
   display: none;
 }
 
+#okay{
+  margin-left: 5px;
+}
+
 #again {
   display: none;
   display: flex;
@@ -55,15 +63,8 @@ body {
   margin-right: auto;
 }
 
-#okay {
-  margin-left: 15px;
-}
-
 #hal {
   display: none;
   margin: 0 auto;
-}
-
-.container {
-  margin-top: 50px;
+  float: right;
 }

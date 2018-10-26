@@ -1,7 +1,6 @@
 var startingArray = [];
 var splitNumbersArray = [];
 
-
 // Does not reject characters that aren't numbers
 function countsTo(stopAt) {
   if (stopAt < 0) {
@@ -32,7 +31,6 @@ function replaces0WithBeep(number) {
   return splitNumbersArray = splitNumbers.slice();
 }
 
-
 $(document).ready(function() {
   $("#okay").click(function(event) {
     event.preventDefault();
@@ -44,9 +42,9 @@ $(document).ready(function() {
     $("#okay").hide();
     $("input#userNumber").hide();
     $("label").hide();
-    $("#again").fadeIn();
-    $("#output").fadeIn();
-    $("#hal").fadeIn();
+    $("#again").fadeIn(600);
+    $("#output").fadeIn(600);
+    $("#hal").fadeIn(600);
     $(".beepboop").text(splitNumbersArray.join(', '));
     console.log(startingArray);
     console.log(splitNumbersArray);
@@ -57,8 +55,8 @@ $(document).ready(function() {
     $("#output").hide();
     $("#again").hide();
     $("#hal").hide();
-    $("label").fadeIn();
-    $("#okay").fadeIn();
+    $("label").fadeIn(600);
+    $("#okay").fadeIn(600);
     $("input#userNumber").fadeIn();
     startingArray = [];
     splitNumbersArray = [];
