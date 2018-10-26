@@ -3,7 +3,9 @@ var splitNumbersArray = [];
 
 function countsTo(stopAt) {
   if (stopAt < 0) {
-    return "I'm sorry, but positive numbers only"
+    startingArray.push("I'm sorry but positive numbers only")
+  } else if (stopAt > 999) {
+    startingArray.push("I'm sorry no higer than 1000 please")
   } else {
     for (var number = 0; number <= stopAt; number++) {
       startingArray.push(number);
@@ -18,7 +20,7 @@ function replaces0WithBeep(number) {
   for (var i = 0; i < splitNumbers.length; i++) {
     if (splitNumbers[i] === "0") {
       splitNumbers[i] = "Beep";
-    } else if (splitNumbers[i].charAt(0) === "1") {
+    } else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
       splitNumbers[i] = "Boop!"
     } else if (parseInt(splitNumbers[i]) % 3 === 0) {
       splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
@@ -30,7 +32,7 @@ function replaces0WithBeep(number) {
 
 $(document).ready(function() {
 
-countsTo(15);
+countsTo(113);
 replaces0WithBeep(startingArray);
 
 console.log(splitNumbersArray);
