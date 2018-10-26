@@ -16,7 +16,7 @@ function countsTo(stopAt) {
   return startingArray;
 }
 
-function replaces0WithBeep(number) {
+function replacesWithBeepBoopAndSorry(number) {
   var splitNumbers = number.toString().split(",");
   for (var i = 0; i < splitNumbers.length; i++) {
     if (splitNumbers[i] === "0") {
@@ -35,7 +35,7 @@ $(document).ready(function() {
   $("#okay").click(function(event) {
     event.preventDefault();
     countsTo($("input#userNumber").val());
-    replaces0WithBeep(startingArray);
+    replacesWithBeepBoopAndSorry(startingArray);
     $("input#userNumber").val("");
     $("body").addClass("fadeInColor");
     $(".header").addClass("fadeInColor");
