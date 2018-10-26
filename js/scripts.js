@@ -12,7 +12,7 @@ function countsTo(stopAt) {
   return startingArray;
 }
 
-function replacesWithBeepsAndBoops(number) {
+function replaces0WithBeep(number) {
   var splitNumbers = number.toString().split(",");
   console.log(splitNumbers);
   for (var i = 0; i < splitNumbers.length; i++) {
@@ -20,6 +20,8 @@ function replacesWithBeepsAndBoops(number) {
       splitNumbers[i] = "Beep";
     } else if (splitNumbers[i].charAt(0) === "1") {
       splitNumbers[i] = "Boop!"
+    } else if (parseInt(splitNumbers[i]) % 3 === 0) {
+      splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
     }
   }
   return splitNumbersArray = splitNumbers.slice();
@@ -29,9 +31,7 @@ function replacesWithBeepsAndBoops(number) {
 $(document).ready(function() {
 
 countsTo(15);
-replacesWithBeepsAndBoops(startingArray);
+replaces0WithBeep(startingArray);
 
 console.log(splitNumbersArray);
-
-
 });
