@@ -9,15 +9,24 @@
     <title></title>
   </head>
   <body>
-    <form id="userInput">
-      <label for="form-control">Please enter a number: </label>
-      <input id="userNumber" type="text">
-      <button id="okay" class="btn" type="submit" name="button">Okay</button>
-      <button id="again" class="btn" type="submit" name="button">Again</button>
-    </form>
-    <div id="output">
-      <div class="beepboop">
+    <h1>Beep Boop Simulator</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="userInput">
+            <label for="form-control">Please enter a number: </label>
+            <input id="userNumber" type="text">
+            <button id="okay" class="btn" type="submit" name="button">Okay</button>
+          </form>
+      </div>
+      <div class="col-sm-6">
+          <div id="output">
+            <div class="beepboop">
 
+            </div>
+            <button id="again" class="btn" type="submit" name="button">Again</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
