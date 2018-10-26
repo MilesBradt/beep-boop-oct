@@ -21,7 +21,7 @@ function replaces0WithBeep(number) {
   var splitNumbers = number.toString().split(",");
   for (var i = 0; i < splitNumbers.length; i++) {
     if (splitNumbers[i] === "0") {
-      splitNumbers[i] = "Beep";
+      splitNumbers[i] = "Beep!";
     } else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
         // **Spent about an hour trying to run another for loop to scroll through every character and check for a "1" with no success
         splitNumbers[i] = "Boop!"
@@ -38,16 +38,15 @@ $(document).ready(function() {
     event.preventDefault();
     countsTo($("input#userNumber").val());
     replaces0WithBeep(startingArray);
-    // $("#okay").hide();
-    // $("#again").show();
+    $("#okay").hide();
+    $("#again").show();
     $("#output").show();
-    $("#output").text(splitNumbersArray.join(', '));
+    $(".beepboop").text(splitNumbersArray.join(', '));
   });
-  // $("#again").click(function(event) {
-  //   event.preventDefault();
-  //   countsTo($("input#userNumber").val());
-  //   replaces0WithBeep(startingArray);
-  //   $("#output").show();
-  //   $("#output").text(splitNumbersArray.join(', '));
-  // });
+  $("#again").click(function(event) {
+    event.preventDefault();
+    $(".beepboop").children().remove();
+    $("#okay").show();
+    $("#again").hide();
+  });
 });

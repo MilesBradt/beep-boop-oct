@@ -1,12 +1,12 @@
   # _Beep Boop Simulator_
 
-  #### _User puts in an input, beep and boops comes out}, {Oct 26, 2018_
+  #### _User puts in an input, beep and boops comes out, Oct 26, 2018_
 
   #### By _**Miles Bradt**_
 
   ## Description
 
-  _The user is asked to input a number, when the number is submitted the program will count by 1 up until that submitted number. Once it's finished counting, 0 will be replaced with "Beep!", any number with a 1 will be replaced with "Boop!", and any number divisible by 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that"_
+  _The user is asked to input a number, when the number is submitted the program will count by 1 up until that number is reached. Once it's finished counting, 0 will be replaced with "Beep!", any number with a 1 will be replaced with "Boop!", and any number divisible by 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that"_
 
   ## Setup/Installation Requirements
 
