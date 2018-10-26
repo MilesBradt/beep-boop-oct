@@ -31,9 +31,10 @@ function replaces0WithBeep(number) {
 
 
 $(document).ready(function() {
-
-countsTo(113);
-replaces0WithBeep(startingArray);
-
-console.log(splitNumbersArray);
+  $("#userInput").submit(function(event) {
+    event.preventDefault();
+    countsTo($("input#userNumber").val());
+    replaces0WithBeep(startingArray);
+    console.log(splitNumbersArray);
+  });
 });
