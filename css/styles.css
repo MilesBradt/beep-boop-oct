@@ -1,6 +1,15 @@
+.fadeInColor:hover {
+  color: #E1E3E0;
+  background-color: #B20008;
+  -webkit-transition: background-color 4000ms linear;
+  -ms-transition: background-color 4000ms linear;
+  transition: background-color 4000ms linear;
+}
+
 .header {
   text-align: center;
   color: #E1E3E0;
+  padding-bottom: 35px;
   background-image:
   linear-gradient(
     to top,
@@ -25,13 +34,17 @@ body {
   color: #E1E3E0;
 }
 
+.top {
+  display: flex;
+  margin: 0 auto;
+}
+
 #userNumber {
   width: 75px;
 }
 
 #output {
   display: none;
-  float: right;
 }
 
 #again {
@@ -42,8 +55,13 @@ body {
   margin-right: auto;
 }
 
+#okay {
+  margin-left: 15px;
+}
+
 #hal {
   display: none;
+  margin: 0 auto;
 }
 
 .container {

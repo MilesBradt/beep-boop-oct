@@ -39,6 +39,8 @@ $(document).ready(function() {
     countsTo($("input#userNumber").val());
     replaces0WithBeep(startingArray);
     $("input#userNumber").val("");
+    $("body").addClass("fadeInColor");
+    $(".header").addClass("fadeInColor");
     $("#okay").hide();
     $("input#userNumber").hide();
     $("label").hide();
@@ -51,6 +53,7 @@ $(document).ready(function() {
   });
   $("#again").click(function(event) {
     event.preventDefault();
+    $("body").removeClass("fadeInColor");
     $("#output").hide();
     $("#again").hide();
     $("#hal").hide();
