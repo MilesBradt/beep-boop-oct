@@ -42,9 +42,10 @@ $(document).ready(function() {
     $("#okay").hide();
     $("input#userNumber").hide();
     $("label").hide();
-    $("#again").fadeIn(600);
-    $("#output").fadeIn(600);
-    $("#hal").fadeIn(600);
+    // Fade from http://api.jquery.com/fadeout/
+    $("#again").fadeIn(800, "linear");
+    $("#output").fadeIn(800, "linear");
+    $("#hal").fadeIn(800, "linear");
     $(".beepboop").text(splitNumbersArray.join(', '));
     console.log(startingArray);
     console.log(splitNumbersArray);
@@ -55,9 +56,9 @@ $(document).ready(function() {
     $("#output").hide();
     $("#again").hide();
     $("#hal").hide();
-    $("label").fadeIn(600);
-    $("#okay").fadeIn(600);
-    $("input#userNumber").fadeIn();
+    $("label").fadeIn(1500, "linear");
+    $("#okay").fadeIn(1500, "linear");
+    $("input#userNumber").fadeIn(1500, "linear");
     startingArray = [];
     splitNumbersArray = [];
   });

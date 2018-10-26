@@ -2,6 +2,9 @@ body {
   background-color: #380D00;
   color: #E1E3E0;
   font-family: 'Roboto', sans-serif;
+  -webkit-transition: background-color 700ms linear;
+  -ms-transition: background-color 700ms linear;
+  transition: background-color 700ms linear;
 }
 
 
