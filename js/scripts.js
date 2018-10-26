@@ -19,11 +19,14 @@ function countsTo(stopAt) {
 function replacesWithBeepBoopAndSorry(number) {
   var splitNumbers = number.toString().split(",");
   for (var i = 0; i < splitNumbers.length; i++) {
-    if (splitNumbers[i] === "0") {
-      splitNumbers[i] = "Beep!";
-    } else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
-        // **Spent about an hour trying to run another for loop to scroll through every character and check for a "1" with no success
-        splitNumbers[i] = "Boop!"
+    if (parseInt(splitNumbers[i]) % 3 === 0 && splitNumbers[i] > 0) {
+      splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that";
+    }
+    // **Spent about an hour trying to run another for loop to scroll through every character and check for a "1" with no success
+    else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
+      splitNumbers[i] = "Boop!";
+    } else if (splitNumbers[i].charAt(0) === "0" || splitNumbers[i].charAt(1) === "0" || splitNumbers[i].charAt(2) === "0") {
+        splitNumbers[i] = "Beep!"
     } else if (parseInt(splitNumbers[i]) % 3 === 0) {
       splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that";
     }

@@ -6,7 +6,9 @@
 
   ## Description
 
-  _The user is asked to input a number, when the number is submitted the program will count by 1 up until that number is reached. Once it's finished counting, 0 will be replaced with "Beep!", any number with a 1 will be replaced with "Boop!", and any number divisible by 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that"_
+  _The user is asked to input a number, when the number is submitted the program will count by 1 up until that number is reached. Once it's finished counting, any number with 0 will be replaced with "Beep!", any number with a 1 will be replaced with "Boop!", and any number divisible by 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that"_
+
+_(These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that.")_
 
   ## Setup/Installation Requirements
 
@@ -44,8 +46,6 @@
   * _Numbers that contain a 1 are replaced with (all digits) "Boop!"_
 
   * _Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
-
-  _(These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that.")_
 
   * _User should be able to enter a new number and see new results over and over again._
 
