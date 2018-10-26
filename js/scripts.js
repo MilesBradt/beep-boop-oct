@@ -42,11 +42,15 @@ $(document).ready(function() {
     $("#again").show();
     $("#output").show();
     $(".beepboop").text(splitNumbersArray.join(', '));
+    console.log(startingArray);
+    console.log(splitNumbersArray);
   });
   $("#again").click(function(event) {
     event.preventDefault();
-    $(".beepboop").children().remove();
+    $("#output").hide();
     $("#okay").show();
     $("#again").hide();
+    startingArray = [];
+    splitNumbersArray = [];
   });
 });
