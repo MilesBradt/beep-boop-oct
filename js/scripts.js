@@ -1,8 +1,12 @@
 beepBoopArray = [];
 
 function countsTo(stopAt) {
-  for (var number = 0; number <= stopAt; number++) {
-  beepBoopArray.push(number);
+  if (stopAt <= 0) {
+    return "I'm sorry, but positive numbers only"
+  } else {
+    for (var number = 0; number <= stopAt; number++) {
+      beepBoopArray.push(number);
+    }
   }
 }
 
@@ -10,6 +14,6 @@ function countsTo(stopAt) {
 
 $(document).ready(function() {
 
-countsTo(15);
+console.log(countsTo(35));
 console.log(beepBoopArray);
 });
