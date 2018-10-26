@@ -15,7 +15,7 @@
 
   ## Known Bugs
 
-  _None so far_
+  _Characters that aren't numbers return as blank rather than the program not running_
 
   ## Support and contact details
 
@@ -27,7 +27,7 @@
 
   ## Sources
 
-  _Hal image from:_ http://kubrick.wikia.com/wiki/File:Hal.png 
+  _Hal image from:_ http://kubrick.wikia.com/wiki/File:Hal.png
 
   ### Specs followed
 
