@@ -7,7 +7,6 @@ body {
   transition: background-color 700ms linear;
 }
 
-
 /* Gradient from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
 .header {
   text-align: center;

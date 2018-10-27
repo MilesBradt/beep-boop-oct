@@ -26,7 +26,7 @@ function replacesWithBeepBoopAndSorry(number) {
     else if (splitNumbers[i].charAt(0) === "1" || splitNumbers[i].charAt(1) === "1" || splitNumbers[i].charAt(2) === "1") {
       splitNumbers[i] = "Boop!";
     } else if (splitNumbers[i].charAt(0) === "0" || splitNumbers[i].charAt(1) === "0" || splitNumbers[i].charAt(2) === "0") {
-        splitNumbers[i] = "Beep!"
+      splitNumbers[i] = "Beep!"
     } else if (parseInt(splitNumbers[i]) % 3 === 0) {
       splitNumbers[i] = "I'm sorry, Dave. I'm afraid I can't do that";
     }
